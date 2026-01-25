@@ -1,0 +1,6 @@
+# (～￣▽￣)～欢迎
+
+- [首页](home.md)
+  - [安装ArchLinux](/home/install.md)
+- [关于](about.md)
+> An awesome project.
