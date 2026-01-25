@@ -1,3 +1,3 @@
-- [首页](home.md)
-  - [安装ArchLinux](/home/install.md)
-- [关于](about.md)
+- [安装ArchLinux](/home/install.md)
+- [系统环境](/home/first.md)
+- [关于](home/)
