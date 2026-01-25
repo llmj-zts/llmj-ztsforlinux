@@ -14,6 +14,7 @@
   <script>
     window.$docsify = {
       loadSidebar: "sidebar.md",
+      themeColor: "#87CEEB",
       relativePath: true,
       subMaxLevel:3 ,
       autoHeader: true,
@@ -22,6 +23,18 @@
       favicon: "https://zts.llmj.dpdns.org/picture/logo.png"
     }
   </script>
+  <script>
+    $.getJSON("https://zts.llmj.dpdns.org/picture/img.json",function(data){
+      const backgroundimg=data;
+      const rand=Math.floor(Math.random()*backgroundimg.length);
+      var ment=document.body;
+      ment.style.backgroundImage='url('+backgroundimg[rand].url+')';
+  </script>
+  <style>
+    a:hover {
+      color:#ff0000;
+    }
+  </style>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
