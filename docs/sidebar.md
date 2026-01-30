@@ -1,3 +1,4 @@
 - [安装ArchLinux](/home/install.md)
 - [系统环境](/home/first.md)
+- [个人笔记](/home/note.md)
 - [关于](home/)
