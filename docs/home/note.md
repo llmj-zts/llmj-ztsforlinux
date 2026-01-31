@@ -20,9 +20,9 @@ spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 
   # 代理相关
   > Linux不用代理实在是太难了<br>
-  > 推荐使用[Fclash](/home/tool.md#Fclash)或[nekoray](),但是nekoray已经挂了，所以更推荐用fclash<br>
+  > 推荐使用[Fclash](/home/tool.md#Fclash)或[nekoray](https://github.com/MatsuriDayo/nekoray)或[v2rayN](/home/tool.md#v2rayN),可惜nekoray已经挂了,就不提供nekoray教程了<br>
   > 机场推荐[mitce](//mitce.net)(我没广告费，真只是推荐),大概4元就一个月了,香港那边延迟很低的<br>
-  > 为了安全考虑，终端和系统图形化界面不是一个代理，系统代理无法应用于终端，[可以参考](https://blog.csdn.net/Min_Xiansen/article/details/144010739),以下命令可以临时将系统代理应用于终端
+  > 为了安全考虑，终端和系统图形化界面不是一个代理，系统代理无法自动应用于终端，[可以参考](https://blog.csdn.net/Min_Xiansen/article/details/144010739),以下命令可以临时将系统代理应用于终端
 ```sh
 proxy_mode=$(gsettings get org.gnome.system.proxy mode)
 proxy_host=$(gsettings get org.gnome.system.proxy.socks host)
