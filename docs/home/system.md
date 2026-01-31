@@ -1,5 +1,14 @@
 # 系统环境
 > 这里存放着系统必备的软件
+  # 快照设置
+  > 其实一个新系统最重要的软件是快照
+  1. 直接安装btrfs-assistant和grub-btrfs
+```sh
+sudo pacman -S btrfs-assistant grub-btrfs
+```
+  2. btrfs-assistant提供图形页面，grub-btrfs让你可以在grub页面打开快照
+
+
   # 应用市场
   - ## yay
   > yay可以在archlinux上下载用户包:虽然国内比较慢
@@ -40,3 +49,6 @@ flatpak remote-modify flathub --url=https://mirrors.ustc.edu.cn/flathub
 ```sh
 yay -S motrix
 ```
+  - ## qbittorent
+  > qbittorent也是一个好用的下载器
+      1. 提供一个[AppImage](https://yhsb.lanzouw.com/iVjAu33qce0j)包

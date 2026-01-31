@@ -8,3 +8,28 @@
   >> ** *注意* **如果你有主板自动唤醒设置并且希望使用UTC时间，需要把唤醒时间调慢8小时
   > [解决方案](https://blog.iyatt.com/?p=10644)网上有很多,个人更建议选用UTC时间
 
+  # 无法显示密码授权框
+  > 其实就是没安装
+```sh
+sudo pacman -S polkit-gnome
+```
+  > 你需要设置自动启动，以niri为例，在~/.config/niri/config.kdl中加入以下
+```自动启动
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+```
+
+  # 代理相关
+  > Linux不用代理实在是太难了<br>
+  > 推荐使用[Fclash](/home/tool.md#Fclash)或[nekoray](),但是nekoray已经挂了，所以更推荐用fclash<br>
+  > 机场推荐[mitce](//mitce.net)(我没广告费，真只是推荐),大概4元就一个月了,香港那边延迟很低的<br>
+  > 为了安全考虑，终端和系统图形化界面不是一个代理，系统代理无法应用于终端，[可以参考](https://blog.csdn.net/Min_Xiansen/article/details/144010739),以下命令可以临时将系统代理应用于终端
+```sh
+proxy_mode=$(gsettings get org.gnome.system.proxy mode)
+proxy_host=$(gsettings get org.gnome.system.proxy.socks host)
+proxy_port=$(gsettings get org.gnome.system.proxy.socks port)
+if [ "$proxy_mode" = "'manual'" ]; then
+    export http_proxy=socks5://${proxy_host//\'/}:${proxy_port}
+    export https_proxy=socks5://${proxy_host//\'/}:${proxy_port}
+    export all_proxy=socks5://${proxy_host//\'/}:${proxy_port}
+fi
+```
