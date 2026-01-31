@@ -33,3 +33,21 @@ if [ "$proxy_mode" = "'manual'" ]; then
     export all_proxy=socks5://${proxy_host//\'/}:${proxy_port}
 fi
 ```
+
+  # Desktop文件的编辑
+  > desktop文件所在位置为*\~/.local/share/applications/*<br>
+  > desktop文件图标位置为*\~/.local/share/icons/*<br>
+  > 以下为.desktop格式
+```sh
+[Desktop Entry]
+Version=1.0
+Name=appName
+Comment=Description
+Exec=/path/to/executable
+Icon=/path/to/icons
+Terminal=false
+Type=Application
+Categories=Utility;Development;
+```
+  > 其中[Desktop Entry],Name,Exec,Type为必选，其他为可选
+  > [补充](//blog.csdn.net/danshiming/article/details/149305616)
