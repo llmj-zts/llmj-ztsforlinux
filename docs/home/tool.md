@@ -1,5 +1,7 @@
 # 食用工具
 > 这里存放着很多食用工具
+
+
 # localsend
 > [localsend](//localsend.org)是一个局域网互传文件的工具，功能很强<br>
 1. 推荐使用[AppImage](https://yhsb.lanzouw.com/ihHt23f5dbra)包
@@ -7,6 +9,7 @@
 ```sh
 sudo pacman -S localsend
 ```
+
 
 # 代理软件
 ## Fclash
@@ -21,6 +24,8 @@ sudo pacman -S localsend
 yay -S v2rayn-bin
 ```
 > ** 注意 **这玩意用yay安装下载奇慢，开代理可以加快，但你就在下载代理啊！！！还是先用fclash吧
+
+
 # CrossOver
 > [crossover](https://www.crossoverchina.com/)这是一个商业以wine做的软件，可以让你在linux上使用window应用<br>
 > 实测下来安装自己的应用就是一坨，但下载它应用市场的应用非常好<br>
