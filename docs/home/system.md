@@ -39,6 +39,18 @@ flatpak remote-modify flathub --url=https://mirrors.ustc.edu.cn/flathub
 ```
     3. 各大软件市场gnome-software或discover都支持flatpak
 
+  - ## 星火应用市场
+  > [星火应用市场](https://www.spark-app.store/)是一个非常好用的应用市场，现在已经支持arch系
+    1. 使用yay安装,我们选用官方更推荐的apm包管理方式
+```sh
+yay -S amber-pm-store
+```
+    2. 随便说下，apm似乎还能安装非应用市场的deb包
+```sh
+# 将 deb 转换为 apm
+amber-pm-convert --base amber-pm-bookworm /pkg.deb
+```
+
  
 
   # 下载器

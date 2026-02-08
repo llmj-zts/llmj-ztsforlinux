@@ -64,7 +64,7 @@ yay -S debtap
 ```sh
 #先更新debtap
 sudo debtap -u
-#开始转化
+#开始转化,过程中会问你包名之类的内容，不知道就直接回车
 sudo debtap 你要转化的deb包路径.deb
 ```
   2. 使用ace环境容器
@@ -76,3 +76,4 @@ yay -S amber-ce-bookworm
 ```sh
 bookworm-run
 ```
+  3. apm环境安装，[请看](/home/system#星火应用市场)
