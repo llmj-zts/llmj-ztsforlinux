@@ -51,3 +51,28 @@ Categories=Utility;Development;
 ```
   > 其中[Desktop Entry],Name,Exec,Type为必选，其他为可选
   > [补充](//blog.csdn.net/danshiming/article/details/149305616)
+
+  # Arch系安装deb包
+  > 我最推荐的方案是不安装deb包，因为没有好的方案，都是存在问题的
+
+  1. 使用debtap转化为zst包
+  > 以下命令安装debtap(好像很慢)
+```sh
+yay -S debtap
+```
+  > 以下命令可以转化
+```sh
+#先更新debtap
+sudo debtap -u
+#开始转化
+sudo debtap 你要转化的deb包路径.deb
+```
+  2. 使用ace环境容器
+  > 可以自己找一个容器，这里我举一个例子,这是星火应用市场官方提供的
+```sh
+yay -S amber-ce-bookworm
+```
+  > 接着就可以用以下命令启动容器，在容器中安装deb包了
+```sh
+bookworm-run
+```
