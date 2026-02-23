@@ -56,7 +56,7 @@ amber-pm-convert --base amber-pm-bookworm /pkg.deb
   # 下载器
   - ## Motrix
   > [Motrix](//motrix.app)是支持linux且**非常好用**的图形化下载器
-      1. 推荐下载[AppImage](https://yhsb.lanzouw.com/ihHt23f5dbra)包
+      1. 推荐下载[AppImage](https://yhsb.lanzouw.com/iyva73f5db7a)包
       2. 使用yay安装:在国内通常很慢
 ```sh
 yay -S motrix
