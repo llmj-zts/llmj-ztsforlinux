@@ -64,3 +64,16 @@ yay -S motrix
   - ## qbittorent
   > qbittorent也是一个好用的下载器
       1. 提供一个[AppImage](https://yhsb.lanzouw.com/iVjAu33qce0j)包
+
+
+  # 谷歌内核浏览器
+  ## ungooglechromium
+  > [ungooglechromium](https://github.com/ungoogled-software/ungoogled-chromium)应该是目前如果必须使用谷歌内核能使用的最佳选择
+```sh
+yay -S ungoogled-chromium
+```
+  ## chromium
+> [chroium](https://www.chromium.org)如果因为网络问题只能使用chromium原版，可以使用以下命令安装
+```sh
+sudo pacman -S chromium
+```
