@@ -77,3 +77,14 @@ yay -S amber-ce-bookworm
 bookworm-run
 ```
   3. apm环境安装，[请看](/home/system#星火应用市场)
+# npm换源
+> 可以安装nrm后换源
+```sh
+npm install -g nrm
+nrm ls
+nrm use taobao
+```
+>也可以直接换源
+```sh
+npm config set registry https://registry.npmmirror.com
+```
