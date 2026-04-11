@@ -67,12 +67,12 @@ yay -S motrix
 
 
   # 谷歌内核浏览器
-  ## ungooglechromium
+  - ## ungooglechromium
   > [ungooglechromium](https://github.com/ungoogled-software/ungoogled-chromium)应该是目前如果必须使用谷歌内核能使用的最佳选择
 ```sh
 yay -S ungoogled-chromium
 ```
-  ## chromium
+  - ## chromium
 > [chroium](https://www.chromium.org)如果因为网络问题只能使用chromium原版，可以使用以下命令安装
 ```sh
 sudo pacman -S chromium
