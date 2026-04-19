@@ -1,12 +1,22 @@
 # 系统环境
 > 这里存放着系统必备的软件
-  # 快照设置
+  # 快照与grub设置
   > 其实一个新系统最重要的软件是快照
-  1. 直接安装btrfs-assistant和grub-btrfs
+  1. 直接安装btrfs-assistant(也可以用timeshift)和grub-btrfs
 ```sh
-sudo pacman -S btrfs-assistant grub-btrfs
+sudo pacman -S btrfs-assistant grub-btrfs os-prober
 ```
-  2. btrfs-assistant提供图形页面，grub-btrfs让你可以在grub页面打开快照
+  2. 接着在/etc/default/grub中去掉这一行到注释
+  ```sh
+GRUB_DISABLE_OS_PROBER=false
+```
+```
+  3. 最后运行以下命令，如果你的grub文件安装位置不一样请自行修改
+  ```sh
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+  ```
+```
+  4. btrfs-assistant提供图形页面，grub-btrfs让你可以在grub页面打开快照,os-prober可以让你grub自动找到系统
 
 
   # 应用市场

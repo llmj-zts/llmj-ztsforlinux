@@ -22,3 +22,17 @@ curl -fsSL https://install.danklinux.com | sh
 ```sh
 yay -S dms-shell-bin
 ```
+
+# 主题安装 
+
+## sddm
+> sddm主题有很多，推荐一个项目[qlock-main](//github.com/Darkkal44/qylock),它有很多主题，包括星铁之类的游戏
+```sh
+git clone https://github.com/Darkkal44/qylock.git
+cd qylock-main
+chmod +x sddm.sh && ./sddm.sh
+```
+
+## Grub
+> grub主题也有很多，推荐一个项目[Gorgeous-GRUB](//github.com/Jacksaur/Gorgeous-GRUB),它收集了很多好看的grub主题
+

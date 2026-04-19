@@ -10,6 +10,13 @@
 sudo pacman -S localsend
 ```
 
+# kdeconnect
+> [kdeconnect](//kdeconnect.kde.org/)作为kde全家桶的一员，真是太好用了<br>
+> 当然如果你是kde桌面那它的兼容性更好
+```sh
+sudo pacman -S kdeconnect
+```
+> 请在手端下载这个[软件](//yhsb.lanzouw.com/iXGrw3nlutqd)
 
 # 代理软件
 ## Fclash
@@ -25,6 +32,13 @@ yay -S v2rayn-bin
 ```
 > ** 注意 **这玩意用yay安装下载奇慢，开代理可以加快，但你就在下载代理啊！！！还是先用fclash吧
 
+# QefiEntryManager
+> [QefiEntryManager](https://github.com/Inokinoki/QEFIEntryManager)是一个非常好用的efi图形化管理工具
+```sh
+yay -S qefientrymanager
+```
+> ** 注意 ** 如果你不知道如何使用，请不要盲目尝试！！！去项目官网查看教程！！！<br>
+> ** 注意 ** 在修改uefi时请先打上快照!!!!因为修改uefi是很危险的操作!!!
 
 # CrossOver
 > [crossover](https://www.crossoverchina.com/)这是一个商业以wine做的软件，可以让你在linux上使用window应用<br>
