@@ -88,3 +88,37 @@ nrm use taobao
 ```sh
 npm config set registry https://registry.npmmirror.com
 ```
+
+# 配置git与github互联
+> 开始之前你需要一个github账户，当然如果你用的是其他托管平台也不会有问题<br>
+> 我们使用的是ssh互联，在互联开始前我们需要设置一些git属性<br>
+> 这些属性在git使用commit时需要，因为git需要作者名才能commit,但是其实你乱设置也不会有任何致命问题
+```sh
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+> 接下来开始正式工作
+1. 生成一个ssh密钥对,你需要安装openssh,但大部分linux会默认安装
+> 如果你去查找其他文章你会发现他们还设置了别的属性，但其实你什么都不设置也能用<br>
+> 这个操作需要你提供一个保存路径，如果不提供默认会在~/.ssh中生成密钥对
+```sh
+ssh-keygen
+```
+2. 你需要把这对密钥对的公钥给github,私钥你则自己留着
+> 点开你在github上的头像-->点击Setting(设置)-->点击ssh and GPG keys(ssh和GPG密钥)-->在ssh中点击New SSH keys(你也可以[点击这里](//github.com/settings/ssh/new)直接打开该页面)
+> 在Title中随便填一个你喜欢的，Key type可以不变，在Key中填入你的公钥(如果你用的是默认设置，公钥会保存在~/.ssh文件夹中并使用.pub为文件后缀)
+> 最后点击Add SSH Keys就完成了。github会根据你提供的公钥自动识别私钥。
+> 你可以使用以下命令查看是否成功，如果成功会显示出sucess字样
+```sh
+ssh -T git@github.com
+```
+3. 因为是ssh密钥所以必须要ssh仓库才能使用哦,你可以在你仓库的code按钮找到ssh链接(请不要使用里面的https链接，那样会出现鉴权错误)，类似于以下命令可以克隆仓库，请自行更改链接
+```sh
+git clone git@github.com:username/reposity.git
+```
+> 当然如果你是一个新仓库也可使用类似以下命令
+```sh
+git remote add origin git@github.com:username/reposity.git
+git push -u origin main
+```
+> 最后注意：全过程其实写的一点也不详细，最好配合其他各个资料查看
