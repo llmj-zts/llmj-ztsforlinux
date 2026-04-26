@@ -112,7 +112,7 @@ ssh-keygen
 ```sh
 ssh -T git@github.com
 ```
-3. 因为是ssh密钥所以必须要ssh仓库才能使用哦,你可以在你仓库的code按钮找到ssh链接(请不要使用里面的https链接，那样会出现鉴权错误)，类似于以下命令可以克隆仓库，请自行更改链接
+3. 因为是ssh密钥所以必须要ssh仓库才能使用哦,git会自行使用你的ssh密钥，你可以在你仓库的code按钮找到ssh链接(请不要使用里面的https链接，那样会出现鉴权错误)，类似于以下命令可以克隆仓库，请自行更改链接
 ```sh
 git clone git@github.com:username/reposity.git
 ```

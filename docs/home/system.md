@@ -29,11 +29,11 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 ```
     2. 接下来更新密钥
 ```sh
-pacman -Sy archlinuxcn-keyring
+sudo pacman -Sy archlinuxcn-keyring
 ```
     3. 最后安装yay
 ```sh
-pacman -S yay
+sudo pacman -S yay
 ```
   > 有关导入archlinuxcn源只会在这里讲一遍，之后不会有，没看到算你倒霉
 
@@ -41,7 +41,7 @@ pacman -S yay
   > 跨平台必装:可惜他装的软件启动很慢
     1. 直接使用pacman安装
 ```sh
-pacman -S flatpak
+sudo pacman -S flatpak
 ```
     2. 换源
 ```sh
@@ -59,6 +59,13 @@ yay -S amber-pm-store
 ```sh
 # 将 deb 转换为 apm
 amber-pm-convert --base amber-pm-bookworm /pkg.deb
+```
+
+ - ## shelly
+ > [shelly](//github.com/Seafoam-Labs/Shelly-ALPM)是一个非常好用的arch管理软件，可管理flatpak,aur,AppImage
+ > 除了没有中文其他都是完美,不过需要你自己换源哦
+```sh
+sudo pacman -S shelly
 ```
 
  
