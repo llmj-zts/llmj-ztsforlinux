@@ -7,13 +7,3 @@
 - [个人笔记](/home/note.md)
 - [关于](home/)
 
-<script>
-  $.getJSON("https://zts.llmj.dpdns.org/picture/img.json",function(data){
-    const backgroundimg=data;
-    const rand=Math.floor(Math.random()*backgroundimg.length);
-    var ment=document.createElement("img");
-    ment.src='url('+backgroundimg[rand].url+')';
-    ment.alt="backgroundimg";
-    document.body.appendChild(ment);
-    })
-</script>

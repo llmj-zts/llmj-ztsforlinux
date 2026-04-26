@@ -16,7 +16,7 @@ sudo pacman -S localsend
 ```sh
 sudo pacman -S kdeconnect
 ```
-> 请在手端下载这个[软件](//yhsb.lanzouw.com/iXGrw3nlutqd)
+> 请在手机端下载这个[软件](//yhsb.lanzouw.com/iXGrw3nlutqd)
 
 # 代理软件
 ## Fclash

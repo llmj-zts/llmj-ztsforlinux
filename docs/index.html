@@ -40,5 +40,51 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <!-- Image inject -->
+  <script>
+    const observer= new MutationObserver(function (mutationsList,observers){
+      sidebarElement=document.querySelector('aside.sidebar');
+      if (sidebarElement==null || sidebarElement.querySelector('.sidebar-img')){
+        return;
+      }
+      $.getJSON("https://zts.llmj.dpdns.org/picture/img.json",function(data){
+        const backgroundimg=data;
+        const rand=Math.floor(Math.random()*backgroundimg.length);
+        var imgment=document.createElement("img");
+        imgment.src=backgroundimg[rand].url;
+        imgment.style.cssText=`
+          width:300px;
+          height:auto;
+          border-radius:10px;`;
+        imgment.className = 'sidebar-img';
+        sidebarElement.appendChild(imgment);
+      });
+
+      //这里直接使用了官方的示例代码
+      var textment=document.createElement("p");
+      textment.className='hitokoto_text';
+      textment.style.cssText=`
+font-size:20px;
+font-weight: bold;
+text-align: center;
+`;
+      fetch("https://v1.hitokoto.cn")
+        .then((response) => response.json())
+        .then((data) => {
+          const hitokoto = document.querySelector(".hitokoto_text");
+          hitokoto.href = `https://hitokoto.cn/?c=l&uuid=${data.uuid}`;
+          hitokoto.innerText = data.hitokoto;
+        })
+        .catch(console.error);
+      sidebarElement.appendChild(textment);
+    });
+
+    setTimeout(()=>{
+      observer.observe(document.body,{
+        childList: true,
+      });
+    },10);
+    //不添加等待10毫米的限制会导致神秘docsify机制反复加载,无论怎么写都会可能出现3张图片
+  </script>
 </body>
 </html>
