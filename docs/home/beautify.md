@@ -36,3 +36,30 @@ chmod +x sddm.sh && ./sddm.sh
 ## Grub
 > grub主题也有很多，推荐一个项目[Gorgeous-GRUB](//github.com/Jacksaur/Gorgeous-GRUB),它收集了很多好看的grub主题
 
+
+# niri效果
+## 模糊效果
+> 我有生之年看到niri出[blur](https://niri-wm.github.io/niri/Window-Effects.html)了！！！<br>
+> 以下是我的示例，可以把它加入到~/.config/niri/config.kdl的尾部
+```sh
+window-rule {
+    opacity 0.8
+    background-effect {
+        blur true
+	xray true
+	noise 0.05
+	saturation 1.5
+    }
+}
+```
+
+## 动态壁纸
+> [mpvpaper](//github.com/GhostNaN/mpvpaper)是一个非常好用的模糊壁纸软件<br>
+> 可以通过以下命令安装
+```sh
+yay -S mpvpaper
+```
+> 以下是一个循环播放壁纸的示例
+```sh
+mpvpaper -o "--loop-playlist" ALL /path/paper.mp4
+```

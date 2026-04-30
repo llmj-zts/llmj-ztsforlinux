@@ -20,7 +20,7 @@ sudo pacman -S kdeconnect
 
 # 代理软件
 ## Fclash
-> [Fclash](https://github.com/chen08209/FlClash)是一个非常好用的clash代理软件,很适合中国宝宝体质<br>
+> [Fclash](https://yhsb.lanzouw.com/iA4yu3ijlw7g)是一个非常好用的clash代理软件,很适合中国宝宝体质<br>
 1. 推荐使用[AppImage](https://yhsb.lanzouw.com/iyyQZ3hf9m4b)包
 2. 这玩意没aur和pacman的包
 ## v2rayN
