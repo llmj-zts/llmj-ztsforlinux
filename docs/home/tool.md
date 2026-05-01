@@ -2,6 +2,21 @@
 > 这里存放着很多食用工具
 
 
+# neovim
+> [neovim](https://github.com/neovim/neovim)是一个优化版本的[vim](https://github.com/vim/vim),最大的优化是支持lua插件<br>
+```sh
+sudo pacman -S neovim 
+```
+> 本身其实与vim没有区别，但是一旦加入插件就是天差地别了<br>
+> 其中最推荐的插件是[lazyvim](https://github.com/LazyVim/LazyVim)作为开箱即用的超级好用的插件<br>
+> 可以使用官方的[一键安装方法](https://www.lazyvim.org/installation)(安装前请确保你已经安装neovim和[nerdfont](/home/system.md#常用字体安装))<br>
+> 因为在linux端配置过于简单，所以不提供已配置完的文件了，如果无法与系统剪贴板同步记得安装剪贴板工具
+```sh
+sudo pacman -S wl-clipboard
+```
+> 需要使用python代码补全需要安装pyright,需要使用C/C++代码补全需要安装clangd,这里不提供示例了
+
+
 # localsend
 > [localsend](//localsend.org)是一个局域网互传文件的工具，功能很强<br>
 1. 推荐使用[AppImage](https://yhsb.lanzouw.com/ihHt23f5dbra)包

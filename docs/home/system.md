@@ -63,7 +63,8 @@ amber-pm-convert --base amber-pm-bookworm /pkg.deb
 
  - ## shelly
  > [shelly](//github.com/Seafoam-Labs/Shelly-ALPM)是一个非常好用的arch管理软件，可管理flatpak,aur,AppImage
- > 除了没有中文其他都是完美,不过需要你自己换源哦
+ > 除了没有中文其他都是完美,不过需要你自己换源哦<br>
+ > !! 注意 !! 以下方法需要你已经添加[cachyOs源](/home/note.md#加入CachyOs源)才能使用
 ```sh
 sudo pacman -S shelly
 ```
@@ -90,7 +91,14 @@ yay -S motrix
 yay -S ungoogled-chromium
 ```
   - ## chromium
-> [chroium](https://www.chromium.org)如果因为网络问题只能使用chromium原版，可以使用以下命令安装
+> [chroium](https://www.chromium.org)如果因为各种问题只能使用chromium原版，可以使用以下命令安装
 ```sh
 sudo pacman -S chromium
 ```
+
+# 常用字体安装
+> 以下命令可以安装常用字体，包括中文控制台图标等等
+```sh
+sudo pacman -S ttf-hack-nerd wqy-zenhei way-bitmapfont noto-fonts noto-fonts-cjk noto-fonts-emoji
+```
+> 不确定是否有遗漏，请自行解决其余问题

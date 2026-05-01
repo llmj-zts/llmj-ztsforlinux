@@ -122,3 +122,25 @@ git remote add origin git@github.com:username/reposity.git
 git push -u origin main
 ```
 > 最后注意：全过程其实写的一点也不详细，最好配合其他各个资料查看
+
+# 中文输入问题
+> 部分软件安装后中文无法输入，在/etc/environment添加以下字段
+```sh
+XMODIFIERS=@im=fcitx
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+```
+> 重启软件后解决问题
+
+# 加入CachyOs源
+> 部分软件需要使用cachyos的源才能下载安装，推荐使用[国内镜像](https://mirrors.ustc.edu.cn/help/cachyos.html)<br>
+> 在/etc/pacman.conf中添加以下字段
+```sh
+[cachyos]
+Server = https://mirrors.ustc.edu.cn/cachyos/repo/$arch/$repo
+```
+> 接下来添加公钥,运行以下命令(其中公钥可能发生变化，请自行解决)
+```sh
+sudo pacman-key --recv-keys 882DCFE48E2051D48E2562ABF3B607488DB35A47
+sudo pacman-key --lsign-key 882DCFE48E2051D48E2562ABF3B607488DB35A47
+```
