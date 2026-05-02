@@ -99,6 +99,6 @@ sudo pacman -S chromium
 # 常用字体安装
 > 以下命令可以安装常用字体，包括中文控制台图标等等
 ```sh
-sudo pacman -S ttf-hack-nerd wqy-zenhei way-bitmapfont noto-fonts noto-fonts-cjk noto-fonts-emoji
+sudo pacman -S ttf-hack-nerd wqy-zenhei wqy-bitmapfont noto-fonts noto-fonts-cjk noto-fonts-emoji
 ```
 > 不确定是否有遗漏，请自行解决其余问题

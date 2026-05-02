@@ -13,15 +13,15 @@ yay -S noctalia-shell-git
 > ** 注意 **noctalia-shell-git是测试版，下载速度比正式版快所以才给予这条
 ## dms
 > [Danklinux](//danklinux.com)是一个开源的niri或hyprland的任务栏，集成度很高<br>
-> ** 注意 **无论哪种方式安装都需要访问到google,所以国内必须要[代理](/home/note#代理有关)才可以正常安装
-1. 可以通过官方提供的一键命令
+1. 可以通过官方提供的一键命令,但是这可能需要代理
 ```sh
 curl -fsSL https://install.danklinux.com | sh
 ```
-2. 可以直接通过yay安装
+2. 现在已经可以使用pacman安装了
 ```sh
-yay -S dms-shell-bin
+pacman -S dms-shell
 ```
+> ** 注意 **如果你是niri请注意在选项中选择niri,不然会自动安装hyprland
 
 # 主题安装 
 
@@ -54,12 +54,12 @@ window-rule {
 ```
 
 ## 动态壁纸
-> [mpvpaper](//github.com/GhostNaN/mpvpaper)是一个非常好用的模糊壁纸软件<br>
-> 可以通过以下命令安装
+> //github.com/GhostNaN/mpvpaper很明显诸如[mpvpaper](//github.com/GhostNaN/mpvpaper)其实也不算好用，这里给出一个网上的方案<br>
+> 将视频转化为webp格式再用[swww](//github.com/LGFae/swww)等播放,这里给出一个ffmpeg的示例
 ```sh
-yay -S mpvpaper
+ffmpeg -i input.mp4 -quality 100 -r 60 output.webp
 ```
-> 以下是一个循环播放壁纸的示例
-```sh
-mpvpaper -o "--loop-playlist" ALL /path/paper.mp4
-```
+> 其中<br>
+> - quality是你需要的质量
+> - r是你需要的帧率
+- ps:为什么不用gif?因为有画质折损
