@@ -1,6 +1,17 @@
 # 游戏环节
 > 这里是和游戏相关的工具和教程
 
+# Lutris
+> [lutris](https://lutris.net/)是一个开源的游戏启动器，好像啥平台都支持<br>
+> 这种开源软件建议有能力的捐下款
+## 安装
+> 可以使用[flatpak](https://flathub.org/en/apps/net.lutris.Lutris)安装，兼容很好
+## protonPlus
+> 自带的下载就是依托，不用其他软件带不动<br>
+> [protonPlus](https://github.com/Vysp3r/protonplus)是一个非常好的软件，支持lutris<br>
+> 可以使用[flatpak](https://flathub.org/zh-Hans/apps/com.vysp3r.ProtonPlus)安装<br>
+> 其中的DW-proton对二游有专门优化并且下载速度特别快
+
 # heroic
 > [heroic](https://heroicgameslauncher.com/)是一个开源免费的游戏启动器，支持epic，gog,amazon平台的游戏<br>
 > 这种开源软件很建议支持一下，有能力的捐下款
@@ -47,3 +58,4 @@ sudo pacman -S protontricks
 ```sh
 protontricks --gui
 ```
+

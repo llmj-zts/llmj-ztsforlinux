@@ -54,12 +54,12 @@ window-rule {
 ```
 
 ## 动态壁纸
-> //github.com/GhostNaN/mpvpaper很明显诸如[mpvpaper](//github.com/GhostNaN/mpvpaper)其实也不算好用，这里给出一个网上的方案<br>
+> 很明显诸如[mpvpaper](//github.com/GhostNaN/mpvpaper)其实也不算好用，这里给出一个网上的方案<br>
 > 将视频转化为webp格式再用[swww](//github.com/LGFae/swww)等播放,这里给出一个ffmpeg的示例
 ```sh
 ffmpeg -i input.mp4 -quality 100 -r 60 output.webp
 ```
 > 其中<br>
-> - quality是你需要的质量
-> - r是你需要的帧率
-- ps:为什么不用gif?因为有画质折损
+> - -quality 是你需要的质量
+> - -r 是你需要的帧率
+- 为什么不用gif? 因为有画质折损
