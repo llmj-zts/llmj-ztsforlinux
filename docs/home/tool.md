@@ -45,7 +45,14 @@ sudo pacman -S kdeconnect
 ```sh
 yay -S v2rayn-bin
 ```
-> ** 注意 **这玩意用yay安装下载奇慢，开代理可以加快，但你就在下载代理啊！！！还是先用fclash吧
+> ** 注意 **这玩意用yay安装下载奇慢，开代理可以加快，但你就在下载代理啊！！！
+## ClashVerge
+> [clashverge]是一个gui的clash代理软件
+1. 这玩意没有AppImage包
+2. 有可以自行编译的aur包，下载速度很快
+```sh
+yay -S clash-verge-rev
+```
 
 # QefiEntryManager
 > [QefiEntryManager](https://github.com/Inokinoki/QEFIEntryManager)是一个非常好用的efi图形化管理工具
