@@ -47,7 +47,7 @@ yay -S v2rayn-bin
 ```
 > ** 注意 **这玩意用yay安装下载奇慢，开代理可以加快，但你就在下载代理啊！！！
 ## ClashVerge
-> [clashverge]是一个gui的clash代理软件
+> [clashverge](https://github.com/Clash-Verge-rev/clash-verge-rev)是一个gui的clash代理软件
 1. 这玩意没有AppImage包
 2. 有可以自行编译的aur包，下载速度很快
 ```sh
@@ -60,7 +60,6 @@ yay -S clash-verge-rev
 yay -S qefientrymanager
 ```
 > ** 注意 ** 如果你不知道如何使用，请不要盲目尝试！！！去项目官网查看教程！！！<br>
-> ** 注意 ** 在修改uefi时请先打上快照!!!!因为修改uefi是很危险的操作!!!
 
 # CrossOver
 > [crossover](https://www.crossoverchina.com/)这是一个商业以wine做的软件，可以让你在linux上使用window应用<br>
